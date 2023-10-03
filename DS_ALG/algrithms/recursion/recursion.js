@@ -213,4 +213,53 @@ function capitalizeWords(arr) {
 
 console.log(capitalizeWords(["i", "am", "learning", "recursion"]));
 /***************** */
+function capitalizeWords(arr) {
+  return arr.length === 0
+    ? []
+    : [arr[0].toUpperCase()].concat(capitalizeWords(arr.slice(1)));
+}
+
+console.log(capitalizeWords(["i", "am", "learning", "recursion"])); // ['I', 'AM', 'LEARNING', 'RECURSION']
+
 /***************** */
+function stringifyNumbers(obj) {
+  let newObject = {};
+  for (let key in obj) {
+    if (
+      typeof obj[key] === "object" &&
+      obj[key] !== null &&
+      !Array.isArray(obj[key])
+    ) {
+      newObject[key] = stringifyNumbers(obj[key]);
+    } else if (typeof obj[key] === "number") {
+      newObject[key] = obj[key].toString();
+    } else {
+      newObject[key] = obj[key];
+    }
+  }
+  return newObject;
+}
+/***************** */
+function collectStrings(obj) {
+  let strings = [];
+  for (let key in obj) {
+    if (typeof obj[key] === "object") {
+      strings = strings.concat(collectStrings(obj[key]));
+    } else if (typeof obj[key] === "string") {
+      strings.push(obj[key]);
+    }
+  }
+  return strings;
+}
+
+let obj = {
+  a: "Zizo",
+  b: 2,
+  c: {
+    d: "Adel",
+    e: "Elkholy",
+    f: ["Basma", 3, "Esam", true],
+  },
+};
+
+console.log(collectStrings(obj));
