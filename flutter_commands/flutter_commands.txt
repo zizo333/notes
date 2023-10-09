@@ -1,0 +1,8 @@
+flutter clean
+flutter doctor
+flutter pub get
+flutter pub add package_name
+flutter pub add package_name && flutter pub get
+flutter build apk
+flutter upgrade --force
+dart run build_runner build --delete-conflicting-outputs
