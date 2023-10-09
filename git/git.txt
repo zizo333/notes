@@ -1,0 +1,145 @@
+* Types of Version Control Systems:
+    1. local VC systems -> local computer
+    2. centeral VC systems -> local server (live server) (no local computer -> any changes on server directly)
+    3. distributed VC systems -> local copy + server (After cloning -> So there is a connection between the local copy and the server) => push/pull
+* Each of commit has the previous commit(parent) using linked list -> this called (branch).
+* main/master is the Default branch.
+* (HEAD -> main) existing in one commit that has the same data into WT into main branch
+
+************************************************************************************************************************************
+
+Git commands:
+1. register my git account
+    git config --global user.name "zizo333"
+    git config --global user.email "zizoadel26@gmail.com"
+2. show all configrations that user did them
+    git config --list
+3. initialize git repo
+    git init -> it will create an empty repo (.git folder)
+4. show the status of the repo (branch - snapshots/commits - untracked/tracked/modified/unmodified)
+    git status / git status -s -> get simple status as (M file.txt) M(file modified) is red (un staged) or green (staged after 'git add .') color if red file in WT != file in Staging != file in git repo / if green file in WT == file in Staging != file in git repo
+5. show files in working tree
+    ls
+6. show files in staging tree (index)
+    git ls-files  / to show SHA-1 git ls-files -s
+7. convert the files in WT from Untracked to Tracked -> staging/index area
+    git add . | git add * | git add file.txt file2.txt | git add subfolder/ (subfolder)| git add *.txt (every file is ending with .txt)
+8. Commit to move file from staging to repo (make first version of repo)
+    git commit -m "Initial commit" -> last commit in git repo == WT
+    git commit -am "" -> add and commit at the same time
+9. show logs in repo
+    git log / git log --oneline  -> ge t local logs
+        * filtering
+            - git log file.txt (get all commits that contails blob that represents file.txt)
+            - git log -2 (get last two commits)
+    git log / git log --oneline  --all -> get (local + remote) logs
+10. get type of objec (bloc/tree/commit) using sHA-1  (commit -> tree -> blob)
+    git cat-file -t SHA-1   t for type / s for size  / p for content
+11. get difference between trees (WT / Staging Tree / repo)
+    git diff -> default between WT and ST
+    git diff --staged -> difference between ST and repo
+12. change the editor of commit to write more
+    git config --global core.editor "vim"
+13. show the changes in repo in one commit
+    git show SHA-1 - git show HEAD (head is SHA-1 that refers to the last commit)
+14. get diff between two commits
+    git diff SHA-1..SHA-2
+15. undoing things
+    * delete the repo
+    rm -rf .git/
+    * untracking tracked file
+    git rm --cached file.txt  -> remove it from indexed area (unstage it) -> not commited yet
+    * discard changes in working directory -> get the last data from the staging tree so WT == Index (modified only)
+    git restore file.txt    
+    *Unstaging staged file : discard changes in working directory after stating file (green modified) (modified + statged) -> commited
+        - git restore --staged file.txt
+        - git restore file.txt (red modified )
+    * change the message of the last commit
+    git commit --amend  -> vim (i for writing :x or :wq for saving)
+    * move head forward <- to get another version (commit)
+        -git reset --hard HEAD~1 | (git reset --hard SHA-1 -> to specific commit) -> ~1 move the head once (<-) ~2 move the head twice (<-<-) --hard forced the WT to change too as commit (repo)
+        -git reflog -> show all commits and changes that happend on them so we can fast forward to the last commit again
+        -git reset --hard HEAD@{1}
+        -git reset HEAD~1 -> changes only staging tree
+            then -> git restore file.txt
+        - git checkout SHA-1 -> change the WT directily
+        - git checkout main -> to reset the HEAD to last commit
+    * revert the changes
+        git revert SHA-1 -> create another commit with previous content
+16. Tag version
+    git tag -a v1.0 -m "This is version 1.0"
+    git show v1.0
+17. Branches
+    * create a branch
+        git branch testing -> start form last commit (last commit is the first parent)
+        git branch -M main -> change the master branch to main as remote branch
+    * get all branches
+        git branch
+        git branch --all  -> local + remote
+        git branch * main  (* is a HEAD that refer to main branch)
+                     testing
+        git branch -v -> get branches with last commit
+        git branch -vv -> get branches with last commit and tracking with remote branches
+    * switch to another branch
+        git switch/checkout testing
+        git switch -c <new-branch-name> -> create a new branch and switch to it
+    * merge testing into  main branch -> (Fast-forward because the HEAD changes to commit in testing branch -> so the last commit in testing branch == last commit in main branch == HEAD)
+    Divergant merge : there are more line (changing in main and testing branches) so it will create a new version after merging (not Fase-forward)
+        git switch main
+        git merge testing
+        -> to show branches that merged with main
+            git branch --merged
+    * if ther are conflicties 
+        - update the file
+        - staging the modified file (add)
+        - commit the staging (commit)
+    * Delete the branch
+        git branch -d testing       
+18. Woriking with remote
+    * hosting service as github / gitlab / bitbucket
+    * clone from remote repo
+        git clone url local_name -> or the same name
+    * show remote repos
+        git remote
+        git remote -v -> show full url and its options like (fetch/push)
+    * show remote branches
+        git branch -r    
+    * fetch from remote
+        git fetch origin -> get new commits without merging
+        git merge
+        git merge origin/main -> merge the remote with local main
+    * pull from remote 
+        git pull origin -> get and merge
+    * push to remote repo
+        git push origin main
+        git push origin -> if the branch in local exists in remote
+        git push -u (--set-upstream) origin new_branch -> to create the new branch and tracking it in remote (synch)
+    * add another remote repo
+        git remote add short_name(ex: origin) url
+19. Github -> is a hosting service for git
+    * create a new repo on command line
+        - git init
+        - git add .
+        - git commit -m "first commit"
+        - git branch -M main
+        - git remote add origin remote-repo-url
+        - git push -u origin main
+    * push an existing repo from the command line
+        - git remote add origin remote-repo-url
+        - git branch -M main
+        - git push -u origin main
+    * share with public repo
+        - fork it -> get copy in my account
+        - clone it 
+        - add remote url of real repo -> to get last updates
+        - push on my repo
+        - then send pull request from github to accept my changes
+    * SSH -> secured
+        - generate SSH
+            ssh-keygen -t ed25519 -C "zizoadel26@gmail.com"
+        - Adding your SSH key to the ssh-agent
+            eval "$(ssh-agent -s)" -> evaluation to check if the SSH key generated successfully
+        - Add your SSH private key to the ssh-agent and store your passphrase in the keychain
+            ssh-add --apple-use-keychain ~/.ssh/id_ed25519 -> if i want to add private key
+        - get content of public ssh key
+            cat ~/.ssh/id_ed25519.pub
