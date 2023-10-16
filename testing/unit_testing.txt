@@ -1,0 +1,7 @@
+Types of testing
+1. Integration Tests -> test some of unts together
+2. End to End Tests (EToE) -> someone test your app
+3. Unit Tests -> test a piece of the project (function and calss)
+ -> code -> expected reuslts -> the testing -> success
+                                            -> failed -> refactor the code
+                                            
