@@ -1,0 +1,30 @@
+1.What is Flutter?
+    * Flutter is an open-source framework by Google for building multi-platform applications from a single codebase.
+    * Flutter is not a language; it is an SDK.
+    * Flutter uses the Dart programming language for creating an app.
+    * The first alpha version of Flutter was released in May 2017.
+
+2. What is Dart?     
+    * It is an open source and developed by Google in 2011.
+    * The purpose of Dart programming language is to create frontend user interface for the web and mobile apps.
+
+3. What are the Flutter widgets?
+    * A Widget is a way to declare and construct UI component.
+
+4. What is the Difference Between Stateless and Stateful Widget in Flutter?
+    * There are two types of widgets in flutter -> Stateless & Stateful widgets.
+    * Stateless -> No changes in its value.
+                -> override the createState and return the State class.
+                -> used when user want to change UI dynamically.
+                -> calling setState to redraw the widget.
+    * Stateful  -> It is a widget that changes its value -> using the State class.
+                -> override the build and return the widget.
+
+5. What is StatefulWidget LifeCycle?
+    * createState() -> return State.
+    * initState() -> It is the first method called after the Widget is created. (it is called once). -> used for initializations. 
+    * didChangeDependencies() -> it is called after initState(). -> after the context is built.
+    * build() -> This is called right after didChangeDependencies(). All the GUI is rendered here and will be called every single time the UI needs to be rendered.
+    * didUpdateWidget() -> It’ll be called once the parent Widget did a change and needs to redraw the UI.
+    * deactivate() ->  Framework calls this method whenever it removes this State object from the tree.
+    * dispose() -> It is called when this object and its State are removed from the tree permanently and will never build again.
