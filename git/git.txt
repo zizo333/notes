@@ -94,8 +94,11 @@ Git commands:
         - staging the modified file (add)
         - commit the staging (commit)
     * Delete the branch
-        git branch -d testing       
-18. Woriking with remote
+        git branch -d testing     
+    * Rename the branch
+        -> in WT : git branch -m old_branch new_branch
+        -> in remote: git push -u origin :old_branch new_branch   
+18. Working with remote
     * hosting service as github / gitlab / bitbucket
     * clone from remote repo
         git clone url local_name -> or the same name
