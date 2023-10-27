@@ -119,6 +119,8 @@ Git commands:
         git push -u (--set-upstream) origin new_branch -> to create the new branch and tracking it in remote (synch)
     * add another remote repo
         git remote add short_name(ex: origin) url
+    * Removing a Git Remote #
+        git remote rm <remote-name>
 19. Github -> is a hosting service for git
     * create a new repo on command line
         - git init

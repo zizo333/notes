@@ -12,6 +12,7 @@ flutter upgrade --force
 flutter devices
 flutter run -d XTX7N18A08000668
 flutter create app_name --org "com.zizo"
+flutter build appbundle
 *********************************
 dart fix --apply
 dart run build_runner build --delete-conflicting-outputs

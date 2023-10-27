@@ -1,5 +1,5 @@
 # Counting the days
-    
+
     * There is some rice on the floor.
     * There are seven oranges on the table.
     * There is some butter in the fridge.
@@ -7,7 +7,7 @@
     * There is some yogurt in the kitchen.
     * There is no cookies on the plate. -> cookies(US) - biscuits(UK)
     * There is no cereal in the supermarket.(حبوب الإفطار)
-    * There are some fires in the sandwich. -> fires(US) - chips(UK) -> (مقليات)
+    * There are some fries in the sandwich. -> fries(US) - chips(UK) -> (مقليات)
     * Do you have some sugar?
     * There is no fruit here.
     * I don't have any eggs.
@@ -16,8 +16,8 @@
 
 ...........................................................................................................................................
 
-# Give me a bar
-    
+=> # Give me a bar
+
     * There is a bag of sugar.(كيس/شنطه)
     * There is some water.
     * There are three bottles of water.
@@ -50,6 +50,7 @@
 ...........................................................................................................................................
 
 # Many - Much - Enough
+
     -> many + noun + s
     -> much + noun
 
@@ -70,9 +71,9 @@
     * We need four eggs. Do we have enough?
       - We have two eggs, that is not enough.
       - We have four eggs, that is enough.
-      - We have six eggs, that is too many.  
+      - We have six eggs, that is too many.
 
-    * Fruit Salad Recipe  
+    * Fruit Salad Recipe
         -> required:  (2) apples - (3) bananas - (4) oranges - (1) mango - (1) pineapple
         -> available: (3) apples - (2) bananas - (4) oranges - (2) mango - (1) pineapple
         1- There are enough oranges.
@@ -80,13 +81,13 @@
         3- You don't have enough bananas.
         4- There are too many mangos.
         5- You have enough pineapples.
-    
+
     * A Cake Recipe Preparing Conversation:
         a. Ok let's make a cake. Where is the recipe?
         b. Here it is.
         a. Great, so, we need flour, let me meger some.
            There is ten ounces of flour.
-        b. It's too much. We only nedd eight ounces.
+        b. It's too much. We only need eight ounces.
         a. Oops! ok!
         b. ahh And how about eggs?
         a. We have four.
@@ -95,7 +96,7 @@
         b. We also need sugar. How much sugar do we have?
         a. Seven ounces.
         b. Really? Oh ok, We need eight ounces.
-        a. ammm There isn't enough. 
+        a. ammm There isn't enough.
             Oh well, what about butter? How much do we need?
         b. Eight ounces too.
         a. ahh easy to remember. ok we have got eight ounces.
@@ -111,7 +112,7 @@
 
     * own(يمتلك) - fit(يلائم) - purse(US) / handbag(UK) - sneakers(US) / trainers(UK)(حذاء رياضى)
       raincoat (معطف للمطر) - Extra Small / Small / Medium / Large / Extra Large - pants(US) / trousers(UK)
-      jeans - sandals - Casual(عفوى) - Suit - Formal - Uniform - Dress(يرتدى) 
+      jeans - sandals - Casual(عفوى) - Suit - Formal - Uniform - Dress(يرتدى)
       Sleeves(أكمام) -> Long/Short sleeves
 
       * Ana owns a red hat.
@@ -129,13 +130,14 @@
       * Not cheap enough(ليس رخيصا بالشكل الكافى)
       * Not long enough(ليس طويلا بالقدر الكافى)
       * Do the new pants fit?
-    
+      * Why do you want to buy a shirt with long sleeves?
+
     * Conv
         a. Look, Marie! There are long dresses over here.
         b. Oh, yes. But i don't want an orange one.
         a. They have a red one, here.
         b. That's perfect.
-            -> What color of dress does Marie buy? Black.
+            -> What color of dress does Marie buy? red.
 
         a. Shala wants a new hat for her birthday.
         b. Which color does she have?
@@ -143,13 +145,13 @@
         b. Ok, so let's get her a blue hat.
         a. Great, let's buy that.
             -> Which hat do the friends choose for Shala? A blue hat.
-        
+
         a. Look, Emma, they have some great skirts here.
         b. Some are really expensive. I don't have much money.
         a. This one isn't expensive.
         b. Oh, no. It's cheap and beautiful. This is a great skirt. Thanks.
             -> What does Emma want? A cheap skirt.
-        
+
         a. I own a blue coat, but i need a new coat.
         b. This black one is cool, does it fit?
         a. I think it's too long.
@@ -171,7 +173,7 @@
 
 ...........................................................................................................................................
 
-# lovely house  
+# lovely house
 
     * horrible(فظيع/بشع) - terrible(سيئ/مروع) - lovely(بديع/جميل) - boring(ممل) - fun(ممتع) - interesting(مثير للاهتمام) - ugly(قبيح)
     * There are two types of adjectives(الصفات)
@@ -183,7 +185,7 @@
     * That is a horrible blue car.
     * This is a fun short story.
     * I have a lovely black cat.
-    * They own a great new own laptop.
+    * They own a great new laptop.
     * Why do you like these ugly old shoes?
     * What do you think of ..?
     * What is your opinion about .. -> (formal)
@@ -201,9 +203,71 @@
       b. They are ugly purple shoes.
 
 ...........................................................................................................................................
+
+# Materials
+
+    * wood - wooden - wool(صوف) - woolen(صوفى) - plastic - metal - rubber - glass - paper - leather - fabric(قماش نسيج) - ceramic
+    * النوع يأتى قبل الاسم
+
+    * This is an expensive red leather couch.
+    * This is a very interesting metal box.
+    * We have two green plastic chairs.
+    * Do you see that lovely glass door?
+    * I like your new pink woolen socks.(أنا أحب جواربك الصوفية الوردية الجديدية)
+    * This is a beautiful round wooden table.
+    * We have two lovely purple leather couches.
+    * She owns some beautiful wooden chairs.
+    * We don't own those horrible plastic plates.
+    * She wants a new metal lamp.
+    * He owns a large fabric bag.
+
 ...........................................................................................................................................
+
+# Sports
+
+    * swimming - sailing(الأبحار) - skateboarding(التزلج اللوحى) - running - skiing(التزحلق + عصيان)(skeen)
+    * snowboarding(التزلج على الجليد) - roller-skating(التزلج الاسطوانى) - surfing(ركوب الامواج) - tennis - golf
+    * badminton(تنس الريشة) (badm(e)nt(en)) - baseball - basketball - rugby(الرجبى) - volleyball(كرة الطائرة)
+    * cycling - hockey - ice hockey(هوكى الجليد) - horse riding - soccer
 ...........................................................................................................................................
+
+# Surfing 
+
+    * هناك بعض الافعال يتم تحويلها لاسماء بإضافة ing
+    * Surf(يركب الامواج) -> Do you know how to surf?
+    * She goes surfing on the weekend. (هى تذهب لركوب الامواج فى العطلات الاسبوعية)
+    * He doesn't go horse riding.
+    * Do they go running every morning?
+    * Do you like badminton?
+    
+    * Conv
+        a. Do you like swimming?
+        b. Yes, i go swimming twice a week.
+        a. Where do you go fishing? (أين تذهب للصيد؟) 
+        b. We don't go fishing at the lake.
+        a. How many times does he go skateboarding?
+        b. He goes skateboarding twice a month.
+        a. Does she go sailing in the summer?
+        b. I don't think so.
+        a. Do you go cycling with your brothers?
+        b. Yes, we go cycling three times a week.
+
+    * Conv
+        a. Hi Sam, How are you?
+        b. Fine thanks.
+        a. You look great.
+        b. Thanks! I do sports every weekday at the moment. (كل أيام الاسبوع)
+        a. That's great, well, I exercise on Mondays. I go swimming then.
+        b. I go running with my brother then, we go to the park.
+        a. Great, how about Tuesdays?
+        b. Well, i go salsa dancing with my friend Alison. It's a really good calss.
+        a. Awesome! And how about Wednesdays?
+        b. I go fishing. hhhh That's not exercise really.
+        a. hhh, No it's not.
+        b. But then on Thursdays i go cycling with my friends. We do about 20 miles in the evening.
+        a. That's good.
+        b. And on Fridays afterwork, i go surfing at the beach. I do it every Friday.
+           It's a great way to finish the week.
+        a. Sounds amazing.
+
 ...........................................................................................................................................
-...........................................................................................................................................
-...........................................................................................................................................
-...........................................................................................................................................        

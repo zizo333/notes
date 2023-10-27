@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class BinarySearchTree {
+class TreeTraversal {
   constructor() {
     this.root = null;
   }
@@ -35,13 +35,49 @@ class BinarySearchTree {
       }
     }
   }
+
+  find(val) {
+    if (this.root === null || !val) return false;
+    let current = this.root;
+    while (current) {
+      if (val === current.val) {
+        return true;
+      } else if (val > current.val) {
+        current = current.right;
+      } else {
+        current = current.left;
+      }
+    }
+    return false;
+  }
+
+  /*
+            10
+        6        15
+      3   8         20
+  */
+
+  BFS() {
+    let node = this.root;
+    let data = [];
+    let queue = []; // FIFO
+
+    queue.push(node);
+    while (queue.length !== 0) {
+      node = queue.shift();
+      data.push(node);
+      if (node.left) queue.push(node.left);
+      if (node.right) queue.push(node.right);
+    }
+    return data;
+  }
 }
 
-let bst = new BinarySearchTree();
-console.log(bst.insert(5));
-console.log(bst.insert(5));
-console.log(bst.insert(6));
-console.log(bst.insert(4));
-console.log(bst.insert(3));
-console.log(bst.insert(2));
-console.log(bst.root.left);
+let bst = new TreeTraversal();
+bst.insert(10);
+bst.insert(6);
+bst.insert(15);
+bst.insert(3);
+bst.insert(8);
+bst.insert(20);
+console.log(bst.BFS());
