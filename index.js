@@ -65,10 +65,21 @@ class TreeTraversal {
     queue.push(node);
     while (queue.length !== 0) {
       node = queue.shift();
-      data.push(node);
+      data.push(node.val);
       if (node.left) queue.push(node.left);
       if (node.right) queue.push(node.right);
     }
+    return data;
+  }
+
+  DFSPreOrder() {
+    let data = [];
+    function traverse(node) {
+      data.push(node.val);
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+    }
+    traverse(this.root);
     return data;
   }
 }
@@ -81,3 +92,4 @@ bst.insert(3);
 bst.insert(8);
 bst.insert(20);
 console.log(bst.BFS());
+console.log(bst.DFSPreOrder());
