@@ -194,3 +194,67 @@
         a. I like her yellow jacket. It's very bright.
         b. I know hahaha
         
+...........................................................................................................................................
+
+# What is happening?
+
+    * hold(يمسك) - carry(يحمل)
+    * What is he doing?
+    * What is he eating?
+    * What are you drawing?
+    * What are they writing?
+    * What are they carrying?
+    * He is not playing.
+    * We are not eating.
+    * I am not sleeping.
+    * Jane is not cooking. She is holding her baby.
+    * Martha isn't eating. She is carrying her shopping bags.
+    * Ted isn't studying. He is cleaning the desk.
+    * Rachel isn't brushing her hair. She is using her laptop.
+    * She is not wearing a yellow sweater.
+
+    * Conv
+        a. Where are you going?
+        b. I'm going to Sam's house.
+        a. Why are you going to Sam's house?
+        b. He wants me to help him do his homework.
+        a. I see.
+        b. Yeah, do you want to come with me?
+        a. I'd like to, but i can't. I'm going to the beach.
+        b. When are you going to the beach?
+        a. After half an hour.
+        b. How are you going to the beach?
+        a. By bus.
+
+    * Conv
+        a. Hi Jack. It's Martha.
+        b. Oh, Hi Martha! How are you?
+        a. Great, How are you?
+        b. I'm fine i'm relaxing in the yard at the moment. The sun is lovely today.
+        a. So nice i'm gardening all day today. Is Rachel with you?
+        b. She is cooking in the kitchen.
+        a. Is Fleur helping her?
+        b. Not really. She's listening to music in her bedroom. She always do that on a Sunday afternoon.
+           And Jacob is reading a book. He has a lot of work to do for University.
+        a. Well, say hi to everyone for me. And can you ask Rachel to call me later?
+        b. Sure.
+           
+...........................................................................................................................................
+
+# State Verbs
+
+    * Action verb -> read - run - sleep - go (فعل فيه حركه)
+        - add to the verb ing
+        * You are reading a book.
+    * State verb -> like - want - love - agree - dislike - own - know (فعل الحاله يصف ما بداخلى)
+        - don't adding ing to the verb
+        * You are knowing me. (wrong)
+        * You know me. (right)
+
+    * He likes the book so much. He is reading it now.
+    * Thomas tells me that he knows your dad.
+    * Tom wants his new bike.
+    * I have a big house by the ocean.
+    * I'm having my dinner.
+    * My sister hates this new TV show.
+    * I see a cat and a dog.

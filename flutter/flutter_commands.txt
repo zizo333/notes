@@ -1,0 +1,31 @@
+* Flutter
+    flutter clean
+    flutter doctor
+    flutter pub get
+    flutter pub upgrade
+    flutter pub outdated
+    flutter pub upgrade --major-versions
+    flutter pub add package_name
+    flutter pub add package_name1 package_name2 && flutter pub get
+    flutter pub add -d package_name && flutter pub get
+    flutter build apk
+    flutter upgrade --force
+    flutter devices
+    flutter run -d XTX7N18A08000668
+    flutter create app_name --org "com.zizo"
+    flutter build appbundle
+*********************************
+* Dart
+    dart fix --apply
+    dart run build_runner build --delete-conflicting-outputs
+*********************************
+* FlutterFire
+    firebase login:list  
+    firebase login:add newAccount
+    firebase login:use newAccount
+    dart pub global activate flutterfire_cli
+    flutterfire configure
+    flutterfire configure --account newEmail
+    await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+    );
