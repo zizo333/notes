@@ -1,0 +1,15 @@
+# Feeling and Moods
+
+    * calm - relaxed - happy - confident - proud - exicited - surprised - pleased(مسرور/راضى)
+    * cheerful(مبتهج) - amused(متسلى) - irritated(مغتاظ) - angry - annoyed(متضايق)
+    * furious(مستشيط غضبا) - sad - unhappy
+
+    * How are you feeling?
+        - I'm feeling happy.
+        - I'm feeling furious.
+    * How is he feeling?
+        - He is feeling amused
+    * How is she feeling?
+        - She is feeling annoyed.
+        - She is feeling cheerful.
+        _ She is not feeling excited.

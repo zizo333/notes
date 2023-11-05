@@ -5,7 +5,7 @@
     * There is some butter in the fridge.
     * There is no seafood in the restaurant.
     * There is some yogurt in the kitchen.
-    * There is no cookies on the plate. -> cookies(US) - biscuits(UK)
+    * There is no cookie on the plate. -> cookie(US) - biscuit(UK)
     * There is no cereal in the supermarket.(حبوب الإفطار)
     * There are some fries in the sandwich. -> fries(US) - chips(UK) -> (مقليات)
     * Do you have some sugar?
@@ -49,7 +49,7 @@
 
 ...........................................................................................................................................
 
-=> # Many - Much - Enough
+# Many - Much - Enough
 
     -> many + noun + s
     -> much + noun

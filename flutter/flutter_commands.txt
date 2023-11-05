@@ -17,6 +17,7 @@
 *********************************
 * Dart
     dart fix --apply
+    flutter pub run build_runner build --delete-conflicting-outputs
     dart run build_runner build --delete-conflicting-outputs
 *********************************
 * FlutterFire
@@ -29,3 +30,7 @@
     await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,
     );
+*********************************
+* Enable https methods on mac
+	<key>com.apple.security.network.client</key>
+	<true/>
