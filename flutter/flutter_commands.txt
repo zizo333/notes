@@ -34,3 +34,8 @@
 * Enable https methods on mac
 	<key>com.apple.security.network.client</key>
 	<true/>
+*********************************
+sudo gem install cocoapods
+* pod install
+sudo arch -x86_64 gem install ffi 
+arch -x86_64 pod install   

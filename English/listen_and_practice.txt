@@ -1,0 +1,30 @@
+1. My name is John
+
+ Hi! Nice to meet you! My name is John Smith. I'm 19 and a student in college. I go to college in New York.
+My favorite courses are Geometry, French and History. English is my hardest course.
+My professors are very friendly and smart. It's my second year in college now. I love it!
+I live in a big house on Ivy Street. It's near the college campus. I share the house with three other students.
+Their names are Bill, Tony  and Paul. We help each other with homework. On the weekend we play football together. 
+I have a younger brother. He just started high school. He is 14 and lives with my parents.
+They live on Mulberry Street in Boston. Sometimes they visit me in New York. I'm happy when they visit.
+My Mom always brings me sweets and candy when they come. I really miss them, too!
+
+# Q&A
+* Where does John Smith go to college?
+- He goes to college in New York.
+* What is John Smith's hardest course?
+- English is his hardest course.
+* Who shares a house with John Smith?
+- Three other students. Their names are Bill, Tony and Paul.
+* How old is John Smith's younger brother.
+- Fourteen.
+* What does John Smith's Mom bring him when they visit?
+- She brings him sweets and candy.
+* Where do John Smith's parents live?
+- They live on Mulberry Street in Boston.
+* Home many students share the house with John Smith?
+- Three students.
+
+# Vocab
+- college campus: الحرم الجامعى
+- Geometry: الهندسة الرياضية
