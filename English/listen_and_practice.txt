@@ -22,9 +22,17 @@ My Mom always brings me sweets and candy when they come. I really miss them, too
 - She brings him sweets and candy.
 * Where do John Smith's parents live?
 - They live on Mulberry Street in Boston.
-* Home many students share the house with John Smith?
+* How many students share the house with John Smith?
 - Three students.
 
 # Vocab
 - college campus: الحرم الجامعى
 - Geometry: الهندسة الرياضية
+
+# trying
+1. Hi nice to meet you, my name is John Smith. I am 19 and a student in college. I go to college in New York.
+My favorite courses are Geometry, French and History. English is my hardest course. My professors are very friendly and smart.
+I live in a big house on Ivy Street. I share the house with other three students. Their names are Bill, Tony and Paul.
+We help each with homework. On weekend we go to play football together. I have a younger brother. He just started
+high school. He is 14 years old. He lives with my parents on Mulberry Street in Boston. Sometimes they visit me
+in New York. I'm happy when they visit. My Mom always brings me sweets and candy when they come. I miss them too!.
