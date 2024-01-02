@@ -1,0 +1,8 @@
+* Class(entity): is a blueprint of an object. -> (attribuets/properties & behaviors/methods/actions )
+* Object: is an instance of the class.
+* Constructor: is a special type of method. (used for initialization || use the name of class)
+* Access Modifiers:
+  1. public (all)
+  2. protected (class , package , subclass)
+  3. no modifier (class , package)
+  4. private (class)
