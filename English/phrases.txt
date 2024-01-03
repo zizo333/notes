@@ -102,7 +102,7 @@
 92. I don't believe you (anymore). (لا اصدقك بعد الان)
 93. I don't believe you. No matter what you say to me.
 94. You get what you give. (أنت تحصد ما تزرع)
-95. Fasten your seat belt.
+95. Fasten your seatbelt.
 96. It's a matter of life and death.
 97. Think before you speak.
 98. I won't take much of your time.
@@ -176,24 +176,24 @@
 160. How can that be?(canat be)(أيعقل ذلك)
 .............................................................................................................
 161. How do i look?
-162. 
-163. 
-164. 
-165. 
-166. 
-167. 
-168. 
-169. 
-170. 
+162. By the way.(بالمناسبة)
+163. Come on in.(تفضل بالدخول)
+164. Come in.
+165. No way.
+166. I'm on my way.
+167. Keep your mouth shut.
+168. I have no other choice.
+169. Promise me you will stay with me until the end.
+170. Promise me you'll saty in the car.
 .............................................................................................................
-171. 
-172. 
-173. 
-174. 
-175. 
-176. 
-177. 
-178. 
+171. Promise me you will end it.
+172. Promise me you'll stay, I'll tell you.
+173. Promise me you'll stay away, Simba.
+174. I hope you appreciate how much he's doing for you.
+175. I hope you appreciate.
+176. I hope you know i didn't mean it.
+177. I hope you know how much you mean to me.
+178. I hope you know how much i love you.
 179. 
 180. 
 .............................................................................................................
