@@ -1,2 +1,15 @@
 1. Node js is an open-source, cross-platform JavaScript runtime environment -> using V8 engin
-2. 
+2. V8 : Google's open source high performance JS and WebAssembly engin, written in c++ (used in chrome and node js)
+3. exports
+   module.export = fun;
+   module.exports = {
+    fun: fun,
+    ...
+   };
+   exports = {
+    fun: fun,
+    ...
+   };
+   exports.add = (num1, num2) => {}
+   exports is a reference to module.exports
+4. JSON.stringify(...); convert json  to string
