@@ -1,7 +1,21 @@
-void main() {
+void main() async {
   String text = r'hello\t world!';
   print(text);
+  p();
+  avd().asBroadcastStream().listen((event) => print(event));
+  avd().asBroadcastStream().listen((event) => print(event * 2));
+  print('object');
 }
+
+void p() async {
+  print(await pr());
+}
+
+Future<String> pr() async {
+  return await Future.delayed(const Duration(seconds: 4), () => 'zizo');
+}
+
+Stream<int> avd() => Stream.periodic(Duration(seconds: 2), (val) => val);
 /*
 import 'dart:async';
 import 'dart:convert';

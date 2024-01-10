@@ -305,5 +305,130 @@
 277. This is my fiancee, Maxine. (خطيبتى)
 278. I need to speak to my fiancee.
 279. Monica, this is Kyra, my fiancee.
-280. 
+280. Iron my shirt. (اكوى قميصى)
 .............................................................................................................
+281. Iron your shirt!
+282. I just ironed those shirts. 
+283. I'll see you there.
+284. Go back to your seat.
+285. Do you know what happened to him? 
+286. I'm not upset. (مش زعلان) 
+287. Don't tell him i said that! okay? 
+288. It never happened.(عمره ماحصل) 
+289. Can i have a look?
+290. I'm not abandoning you, (لن اتخلى عنك)
+.............................................................................................................
+291. I'm not going to lie to you. (gonna)
+292. I'm sorry, were you saying something? (هل كنت تقول شيئا؟)
+293. I'm sorry. What were you saying? 
+294. I was saying that... (كنت بقول كذا)
+295. I told you a million times. 
+296. I'll see what i can do. (هشوف هعمل ايه)
+297. It is in emergency. (انه فى حالة طوارئ)
+298. What's going on here?
+299. He is in danger.
+300. I will examine him right. (سوف أقوم بفحصه على الفور.)
+.............................................................................................................
+301. Did you get the wages?
+302. I begged for some dollars. (توسلت للحصول على بعض المال)
+303. We have to pray for them.
+304. I'll go to pray.
+305. I'll prescribe her some medicines. (هوصفلها بعض الادوية)
+306. Can we meet her. I'm worried about her.
+307. I don't have money anymore.
+308. i will figure something out mom. Everything will be fine.
+309. How are you feeling now my sweetie?
+310. he is no more. (لم يعد موجودا)
+.............................................................................................................
+311. This cannot be happening.
+312. We have to be brave.
+313. What should i do now? i want my husband back.
+314. You have to pull yourself together. (تتماسك)
+315. Life is not a bed of roses. (الحَياة صَعبة وتَتطلَّب الكثير من الكِفاح)
+316. What happened mom? You look worried. Is everything okay?
+317. I need a new housekeeper my sweetie. The old one has gone. She was very arrogant.
+318. What's the big deal? (ايه المشكلة؟)
+319. I'm feeling boared at home.
+320. Sounds good to me.
+.............................................................................................................
+321. I want to have some fun.
+322. Just give me a few minutes.
+323. We are run out of groceries.(نفد منا البقالة)
+324. We are run out of time. (نفد منا الوقت)
+325. Oh Good help us. You are our only hope.
+326. Why are you not eating anything? I have had my dinner mom. i'm not hungry anymore.
+327. Why are you lying? You did not eat anything.
+328. You can have my dinner sister. i'm full.
+329. Stop doing this.
+330. We have to support each other.
+.............................................................................................................
+331. Don't cry. I cannot see tears in your eyes.
+332. I will do anything.
+333. I cannot sit at home.
+334. as well. (too)
+335. I will be back soon.
+336. I don't have spare change. (قطع نقدية ضئيلة)
+337. I'm not a beggar. (لست متسول)
+338. You may go now. (يمكنك الذهاب الان)
+339. This neighborhood is very rich. (الحى او الجوار)
+340. It is just one block away. (على بعد مبنى واحد فقط)
+.............................................................................................................
+341. Can you do the laundry. (هل يمكنك الغسيل)
+342. Her phone is off. (تليفونها مقفول)
+343. What took you so long? (ايه الل أخرك)
+344. I can't believe it. (مش مصدق)
+345. Why aren't you laughing? (warent | waren)
+346. Can i talk to you in private?
+347. No pain, no gain.
+348. I didn't sleep in all last night. (طول الليل)
+349. Enough is enough. (لقد طفح الكيل)
+350. I don't want to hear anything.
+.............................................................................................................
+351. Passed away. (توفي)
+352. I'll come back later. 
+353. Are you drunk? (هل انت سكران؟)
+354. Where were you?
+355. I'm not a kid anymore.
+356. I was not excepting this from you.
+357. I'm all ears.
+358. Is everything okay?
+359. I want my wages on daily basis. (على أساس يومي)
+360. How was your day?
+.............................................................................................................
+361. I'm going to miss you so much. (I'm gonna | a-mona) (هتوحشنى جدا)
+362. I'll deal with you later. (حسابنا بعدين)
+363. I'll be ready in three(ten) minutes.
+364. It'll be ready in a week.
+365. I already ate.
+366. You did everything you could.(عملت الل تقدر عليه)
+367. Let me think.
+368. Have you thought about that? (هل فكرت فى دا؟)
+369. Get out right now.
+370. I can understand your situation.
+.............................................................................................................
+371. You must be exhausted. (مرهقا)
+372. I will get it. (سأفعل)
+373. You were not at home.
+374. Not at all. (بأى حال من الاحوال)
+375. Either pay the rent or leave this house. That's it.
+376. We are helpless. (عاجز/مغلوب على امره)
+377. Will we abandon this house? (هل سنتخلى عن هذا المنزل؟)
+378. I don't want to hear your lame excuses anymore. (حجج واهية)
+379. The landlord wants the house rent. (المؤجر)
+380. Stop nagging mom. Why are you furious with me? (توقف عن التذمر. لماذا انتى غاضبة منى)
+.............................................................................................................
+381. How could you do this?
+382. You scolded her last night. (وبخ)
+383. Don't hesitate.
+384. I need a favor.
+385. What is the matter?
+386. You can deduct money from my salary later.
+387. Good bless you.
+388. I got it.(فهمت/حصلت عليه)
+389. I want to drink a cup of coffee.
+390. I will be back soon.
+.............................................................................................................
+391. Hang on a second. (انتظر)
+392. Mom insulted me because of her. (اهانتنى)
+393. I have to teach her a lesson.
+394. Your are useless.
