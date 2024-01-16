@@ -13,3 +13,14 @@
    exports.add = (num1, num2) => {}
    exports is a reference to module.exports
 4. JSON.stringify(...); convert json  to string
+5. app.use(express.static('./views)) // using to get static files (middleware)
+   app.use((req, res, next) => { // global
+      console.log('...');
+      next();
+   });
+   app.use('/about', (req, res, next) => { // for global route only
+      console.log('...');
+      next();
+   });
+6. modules:
+   express - express-validator - nodemodule - 
