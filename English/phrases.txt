@@ -495,5 +495,37 @@
 450. Who is it? (who-wzit) / It's me. (مين)
 .............................................................................................................
 451. Get out of my way.
+452. why are you lying?
+453. I'm not lying.
+454. I hope you feel better soon.
+455. I'll wait outside.
+456. What are you laughing at? (Whadyou)
+457. Are you deaf? (مبتسمعش؟)
+458. When will you be back? (weyoube)
+459. By the end of the day.
+460. I haven't decided yet.
 .............................................................................................................
+461. Do you come here a lot?
+462. Lucky for me.(من حسن حظنى)
+463. Can i offer you a drink? (a not appear)
+464. What are you eating? (Whadyou)
+465. I have no idea what you are talking about. (you talking)
+466. I'll be waiting for you.
+467. Can i ask you a personal question? 
+468. Who gave you this number?
+469. No need to explain.
+470. I've never been better. (انا فى احسن حال)
 .............................................................................................................
+471. Why are you yelling at me. (لماذا تصرخ فى وجهى؟) (yalling)
+472. Well, I'll explain it when i see you.
+473. I really have to go. I call you later. Bye.
+474. She looks like you.
+475. What is the matter? I'm in a bad mood. (amina)
+476. What brings you here?
+477. I thought you weren't comming.
+478. No need to apologize.
+479. I'm sure we'll figure it out. (متأكد اننا سنجد حل)
+480. I'll never see him again.
+.............................................................................................................
+481. Why are you up so early? (صاحي بدرى ليه؟)
+482. Have you seen my son?
