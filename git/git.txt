@@ -57,10 +57,10 @@ Git commands:
     * change the message of the last commit
     git commit --amend  -> vim (i for writing :x or :wq for saving)
     * move head forward <- to get another version (commit)
-        -git reset --hard HEAD~1 | (git reset --hard SHA-1 -> to specific commit) -> ~1 move the head once (<-) ~2 move the head twice (<-<-) --hard forced the WT to change too as commit (repo)
-        -git reflog -> show all commits and changes that happend on them so we can fast forward to the last commit again
-        -git reset --hard HEAD@{1}
-        -git reset HEAD~1 -> changes only staging tree
+        - git reset --hard HEAD~1 | (git reset --hard SHA-1 -> to specific commit) -> ~1 move the head once (<-) ~2 move the head twice (<-<-) --hard forced the WT to change too as commit (repo)
+        - git reflog -> show all commits and changes that happend on them so we can fast forward to the last commit again
+        - git reset --hard HEAD@{1}
+        - git reset HEAD~1 -> changes only staging tree
             then -> git restore file.txt
         - git checkout SHA-1 -> change the WT directily
         - git checkout main -> to reset the HEAD to last commit
@@ -89,7 +89,7 @@ Git commands:
         git merge testing
         -> to show branches that merged with main
             git branch --merged
-    * if ther are conflicties 
+    * if there are conflicties
         - update the file
         - staging the modified file (add)
         - commit the staging (commit)

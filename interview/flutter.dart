@@ -1,7 +1,7 @@
 /*
 1.What is Flutter?
     * Flutter is an open-source framework by Google for building multi-platform applications from a single codebase.
-    * Flutter is not a language; it is an SDK.
+    * Flutter is not a language, it is an SDK.
     * Flutter uses the Dart programming language for creating an app.
     * The first alpha version of Flutter was released in May 2017.
 
@@ -15,10 +15,10 @@
 4. What is the Difference Between Stateless and Stateful Widget in Flutter?
     * There are two types of widgets in flutter -> Stateless & Stateful widgets.
     * Stateless -> No changes in its value.
+    * Stateful  -> It is a widget that changes its value -> using the State class.
                 -> override the createState and return the State class.
                 -> used when user want to change UI dynamically.
                 -> calling setState to redraw the widget.
-    * Stateful  -> It is a widget that changes its value -> using the State class.
                 -> override the build and return the widget.
 
 5. What is StatefulWidget LifeCycle?
@@ -230,3 +230,6 @@ class Email {
     imessage.sendEmail();
   }
 }
+// Testing:
+ //* Integration - Widget - Unit testing
+// 

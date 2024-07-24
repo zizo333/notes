@@ -5,7 +5,7 @@
 * The API level refers to the version of the APIs used by apps
     - the equivalent API level for Android version 9.0 is 28.
 * After Pie -> code name is a number (version number: 10.0 & code name: 10)
-* Android Studio projects use the (Gradle build) system to compile and deploy apps,
+* Android Studio projects use the (Gradle build) system to compile(build), run and deploy apps,
 * AVD -> Android Virtual Device.
 * APK -> Android applicaiton package.
 * Run the app
@@ -24,4 +24,9 @@
         An AVD is a specific setup for your virtual device.
         It's like deciding what version of Android your virtual device will have, what kind of phone it is, and its screen size.
         AVDs are managed using the AVD Manager in Android development tools.
-                                        
+* Gradle:
+    - Android Studio uses Gradle to build, generate and deploy APKs.
+    - app/build_gradle:
+      1. plugins: {} -> خاصة بموديول ال app فقط
+      2. compileSdk: 33 -> uses the features of sdk33 / supports api level <= 33
+      3. targetSdk: 33 -> شغال كويس عليه

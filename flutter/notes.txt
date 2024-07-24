@@ -1,2 +1,0 @@
-SystemChannels.textInput.invokeMethod('TextInput.show');
-SystemChannels.textInput.invokeMethod('TextInput.hide');

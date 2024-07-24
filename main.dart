@@ -275,3 +275,296 @@ private val SERVICE_ID = 1
         }
     }
 */
+/*
+import 'package:easy_localization/easy_localization.dart';
+import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:resort/core/enums/enums.dart';
+import 'package:resort/core/resources/string_manager.dart';
+import 'package:resort/core/shared/shared_data.dart';
+import 'package:resort/di/di.dart';
+import 'package:resort/features/invoices_entries_rasd/data/models/bill/bill.dart';
+import 'package:resort/features/invoices_entries_rasd/data/models/bill_data.dart';
+import 'package:resort/features/invoices_entries_rasd/data/models/currency/currency.dart';
+import 'package:resort/features/invoices_entries_rasd/data/models/item/item.dart';
+import 'package:resort/features/invoices_entries_rasd/data/repositories/invoices_repository.dart';
+import 'package:resort/features/invoices_entries_rasd/data/repositories/items_repository.dart';
+
+import '../../data/models/mobile_invoice_data_vm/mobile_invoice_data_vm.dart';
+
+part 'invoice_list_state.dart';
+
+class InvoiceListCubit extends Cubit<InvoiceListState> {
+  final InvoicesRepository _invoicesRepository;
+  final ItemsRepository _itemsRepository;
+
+  InvoiceListCubit(
+    this._invoicesRepository,
+    this._itemsRepository,
+  ) : super(InvoiceListState.init());
+
+  List<Bill> _onlineBills = [];
+  List<Bill> _offlineBills = [];
+  List<Bill> get _allBills => [..._offlineBills, ..._onlineBills];
+  List<Item> items = [];
+
+  void fetchBillsByType() async {
+    final typeGuid = sl<SharedData>().invoiceType!.guid;
+    emit(state.copyWith(requestState: RequestState.loading));
+    final offlineInvoices =
+        await _invoicesRepository.fetchOfflineInvoices(typeGuid);
+    _offlineBills = offlineInvoices
+        .map((invoice) => Bill.fromOfflineInvoice(invoice))
+        .toList();
+    final result = await _invoicesRepository.fetchOnlineBills(typeGuid);
+    result.fold((failure) {
+      emit(state.copyWith(
+        requestState: RequestState.error,
+        message: failure.message,
+      ));
+    }, (onlineBills) async {
+      _onlineBills = onlineBills;
+      List<Currency> currencies = [];
+      (await _invoicesRepository.fetchCurrencies()).fold((_) {},
+          (currenciesList) {
+        currencies = currenciesList;
+      });
+      emit(state.copyWith(
+        requestState: RequestState.loaded,
+        offlineBills: _offlineBills,
+        offlineInvoices: offlineInvoices,
+        onlineBills: _onlineBills,
+        currency: currencies.first,
+      ));
+    });
+  }
+
+  void searchInvoice(String searchTxt) {
+    List<Bill> bills = _allBills.where((bill) {
+      return bill.billNo.toLowerCase().contains(searchTxt.toLowerCase()) ||
+          bill.custName.toLowerCase().contains(searchTxt.toLowerCase());
+    }).toList();
+    if (searchTxt.isEmpty) {
+      bills = _allBills;
+    }
+
+    emit(state.copyWith(
+      onlineBills: bills,
+      actionState: RequestState.none,
+    ));
+  }
+
+  deleteBill(Bill bill) async {
+    emit(state.copyWith(actionState: RequestState.loading));
+    final result = await _invoicesRepository.deleteBill(bill.guid);
+    result.fold((failure) {
+      emit(state.copyWith(
+        actionState: RequestState.error,
+        message: failure.message,
+      ));
+    }, (_) {
+      _onlineBills.remove(bill);
+      emit(state.copyWith(
+        actionState: RequestState.loaded,
+        onlineBills: _onlineBills,
+        message: AppString.deletedSuccessfully.tr(),
+      ));
+    });
+  }
+
+  deleteOfflineInvoice(Bill bill) async {
+    await _invoicesRepository.deleteSyncMobileInvoiceData(bill.date);
+    _onlineBills.remove(bill);
+    emit(state.copyWith(
+      onlineBills: _onlineBills,
+      actionState: RequestState.none,
+    ));
+  }
+
+  saveBill(Bill bill, int index) async {
+    emit(state.copyWith(
+      savingBill: bill,
+      actionState: RequestState.none,
+    ));
+    final offlineInvoices =
+        await _invoicesRepository.getSyncMobileInvoiceData();
+    final mobileInvoiceDataVM = offlineInvoices
+        .firstWhere((invoice) => invoice.mobileInvoiceVM.guid == bill.guid);
+    final mobileInvoiceDataVMResult =
+        await _invoicesRepository.addMobileInvoice(mobileInvoiceDataVM);
+    mobileInvoiceDataVMResult.fold((failure) {
+      emit(state.copyWith(
+        savingBill: null,
+        actionState: RequestState.error,
+        message: failure.message,
+      ));
+    }, (invoice) {
+      deleteOfflineInvoice(bill);
+      _onlineBills.insert(
+          index,
+          Bill.fromOfflineInvoice(
+            mobileInvoiceDataVM,
+            isOffline: false,
+          ));
+      emit(state.copyWith(
+        savingBill: null,
+        onlineBills: _onlineBills,
+        actionState: RequestState.loaded,
+      ));
+    });
+  }
+
+  Future<BillResponse?> getBill(String billGuid) async {
+    emit(state.copyWith(actionState: RequestState.loading));
+    final itemsResult = await _itemsRepository.fetchItems();
+    return itemsResult.fold(
+      (failure) {
+        emit(state.copyWith(
+          actionState: RequestState.error,
+          message: failure.message,
+        ));
+        return null;
+      },
+      (items) async {
+        this.items = items;
+        final result = await _invoicesRepository.getBillData(billGuid);
+        return result.fold((failure) {
+          emit(state.copyWith(
+            actionState: RequestState.error,
+            message: failure.message,
+          ));
+          return null;
+        }, (billResponse) async {
+          emit(state.copyWith(actionState: RequestState.none));
+          return billResponse;
+        });
+      },
+    );
+  }
+
+  num get totalBeforeVatAmount {
+    return state.offlineInvoices.fold(
+      0,
+      (previousValue, invoice) => previousValue + invoice.mobileInvoiceVM.total,
+    );
+  }
+
+  num get totalAdds {
+    return state.offlineInvoices.fold(
+      0,
+      (previous, invoice) =>
+          previous +
+          invoice.mobileInvoiceItemsVM
+              .fold(0, (previous, item) => previous + item.extra),
+    );
+  }
+
+  num get totalDiscounts {
+    return state.offlineInvoices.fold(
+      0,
+      (previous, invoice) =>
+          previous +
+          invoice.mobileInvoiceItemsVM
+              .fold(0, (previous, item) => previous + item.disc),
+    );
+  }
+
+  num get totalAddTax {
+    return state.offlineInvoices.fold(
+      0,
+      (previousValue, invoice) =>
+          previousValue + invoice.mobileInvoiceVM.addTax,
+    );
+  }
+
+  num get totalWithVatAmount {
+    return state.offlineInvoices.fold(
+      0,
+      (previousValue, invoice) =>
+          previousValue +
+          invoice.mobileInvoiceVM.total +
+          invoice.mobileInvoiceVM.addTax,
+    );
+  }
+
+  num get invoiceDiscs {
+    return state.offlineInvoices.fold(
+      0,
+      (previous, invoice) =>
+          previous +
+          invoice.mobileDiscs.fold(0,
+              (previous, addDiscs) => previous + (addDiscs.discValue ?? 0.0)),
+    );
+  }
+
+  num get invoiceAdds {
+    return state.offlineInvoices.fold(
+      0,
+      (previous, invoice) =>
+          previous +
+          invoice.mobileDiscs.fold(
+              0, (previous, addDiscs) => previous + (addDiscs.addValue ?? 0.0)),
+    );
+  }
+}
+
+
+/*
+List<CartItem> cartItems = [];
+          for (var billItem in billResponse.billItems) {
+            final Item item =
+                items.firstWhere((item) => item.guid == billItem.matGuid);
+            num price = billItem.price;
+            num addValue = billItem.extra;
+            num addPercent = billItem.extra / (billItem.qty * billItem.price);
+            num discValue = billItem.disc;
+            num discPercent = billItem.disc / (billItem.qty * billItem.price);
+            cartItems.add(
+              CartItem(
+                guid: billItem.guid,
+                item: item,
+                quantity: billItem.qty.toDouble(),
+                note: billItem.notes,
+                unitId: billItem.unitId,
+                unitName: billItem.unitName,
+                unitVal: billItem.unitVal,
+                addTaxRate: billItem.addTaxRate,
+                addValue: addValue,
+                addPercent: addPercent,
+                discountValue: discValue,
+                discountPercent: discPercent,
+                price: price,
+                total: InvoicesHelper.calculateItemTotalPrice(
+                  price: price,
+                  quantity: billItem.qty.toDouble(),
+                  addValue: addValue,
+                  discountValue: discValue,
+                  addTaxRate: billItem.addTaxRate,
+                ),
+              ),
+            );
+          }
+          // final mainCartItem = MainCartItem(
+          //   invoiceType: instance<SharedData>().invoiceType!,
+          //   cartItems:cartItems,
+          //   customerName:billResponse.bill.custName,
+          //   customerPhone:billResponse.bill.phone,
+          //   customerTaxNo:,
+          //   personCompany:,
+          //   person:,
+          //   customerAccount:,
+          //   oppositeAccount:,
+          //   store:,
+          //   cost:,
+          //   employee:,
+          //   paymentType:,
+          //   invoiceNote:,
+          //   addValue:,
+          //   discValue:,
+          //   addDiscAcc:,
+          //   oppositeAddDiscAcc:,
+          //   invoiceAddDiscs:,
+          // );
+*/
+
+*/
